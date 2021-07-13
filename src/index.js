@@ -6,11 +6,12 @@ import "./index.css";
 
 // Import Components
 import LandingPage from "./Components/LandingPage";
-
+import Signup from "./Components/Signup";
 const App = () => {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <Signup />
     </>
   );
 };

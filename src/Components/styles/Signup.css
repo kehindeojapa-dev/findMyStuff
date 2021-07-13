@@ -1,0 +1,76 @@
+.signup-container {
+  min-height: 100vh;
+  background-color: var(--color1);
+}
+
+.signup-grid {
+  /* outline: 1px solid orangered; */
+  width: 95%;
+  margin: auto;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 20px;
+  background-color: var(--color2);
+  overflow: hidden;
+}
+
+.signup-grid-info {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: var(--color3);
+  color: #fff;
+}
+
+.signup-grid-info h2 {
+  font-size: 1.2em;
+}
+.signup-grid-info h3 {
+  margin-top: 3em;
+  font-size: 1.3em;
+}
+
+.signup-grid-info p {
+  margin-top: 1.5em;
+  font-size: 1.16em;
+}
+
+.signup-grid-form {
+  padding: 0 3em;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  color: var(--color3);
+}
+
+.signup-form h1 {
+  margin-top: 1.8em;
+  font-size: 2em;
+  line-height: 1.1em;
+  margin-bottom: 0.7em;
+}
+
+.signup-form label {
+  font-size: 1.1em;
+}
+.signup-form input {
+  height: 2.5em;
+  padding-left: 0.5em;
+  font-size: 1.1em;
+  outline: none;
+  color: var(--color3);
+  border-radius: 3px;
+  border: 1px solid var(--color3);
+  background-color: var(--color1);
+  margin-bottom: 0.4em;
+}
+.signup-form input:focus {
+  border: 1px solid var(--color5);
+}
+
+.signup-form input[type="submit"] {
+  margin-top: 0.5em;
+}
