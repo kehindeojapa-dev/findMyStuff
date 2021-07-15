@@ -3,10 +3,13 @@ import React from "react";
 // Style
 import "./styles/Signup.css";
 
+// Import Component
+import Footer from "./Footer";
+
 const Signup = () => {
   return (
     <>
-      <section className="signup-container">
+      <div className="signup-container">
         <section className="signup-grid">
           <div className="signup-grid-info">
             <h2>Find my Stuff</h2>
@@ -21,9 +24,9 @@ const Signup = () => {
             <form className="signup-form">
               <h1>Create your account</h1>
               <label htmlFor="name">Name</label>
-              <input type="text" required autocomplete="name" />
+              <input type="text" required autoComplete="name" />
               <label htmlFor="email">Email</label>
-              <input type="email" required autocomplete="email" />
+              <input type="email" required autoComplete="email" />
               <label htmlFor="password">Password</label>
               <input type="password" required minLength="6" />
               <input type="submit" value="Sign Up" />
@@ -33,7 +36,8 @@ const Signup = () => {
             </form>
           </div>
         </section>
-      </section>
+        <Footer />
+      </div>
     </>
   );
 };

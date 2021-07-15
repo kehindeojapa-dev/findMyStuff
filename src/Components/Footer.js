@@ -8,7 +8,9 @@ const Footer = () => {
     <footer>
       <p>
         designed and developed with <span>❤</span> by{" "}
-        <a href="https://github.com/kehindeojapa-dev">Kehinde Ojapa</a>
+        <a href="https://github.com/kehindeojapa-dev" target="-">
+          Kehinde Ojapa
+        </a>
       </p>
     </footer>
   );

@@ -2,9 +2,12 @@ footer {
   width: 100%;
   background-color: var(--color2);
   text-align: center;
-  padding: 1em;
   position: absolute;
   bottom: 0;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer p {
