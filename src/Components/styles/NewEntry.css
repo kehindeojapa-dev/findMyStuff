@@ -1,0 +1,12 @@
+.newentry {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  position: fixed;
+  background-color: var(--color6);
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
