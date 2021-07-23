@@ -9,9 +9,14 @@ import { data } from "../sample";
 // Import Component
 import Footer from "./Footer";
 import NewEntry from "./NewEntry";
+import DeleteScreen from "./DeleteScreen";
+import UpdateScreen from "./UpdateScreen";
 const Entries = () => {
   // App States
   const [showEntry, setShowEntry] = useState(false);
+  const [showDelete, setShowDelete] = useState(false);
+  const [showUpdate, setShowUpdate] = useState(false);
+
   return (
     <>
       <section className="entries-container">
@@ -23,7 +28,10 @@ const Entries = () => {
           <p>Click to add new entry</p>
           <button
             className="entries-addBtn"
-            onClick={() => setShowEntry(!showEntry)}
+            onClick={() => {
+              setShowEntry(!showEntry);
+              setShowDelete(false);
+            }}
           >
             +
           </button>
@@ -31,6 +39,12 @@ const Entries = () => {
 
         {/* newEntry form is activated here */}
         {showEntry && <NewEntry showEntry={setShowEntry} />}
+
+        {/* Delete Screen is activated here */}
+        {showDelete && <DeleteScreen showDelete={setShowDelete} />}
+
+        {/* Update Screen is activated here */}
+        {showUpdate && <UpdateScreen showUpdate={setShowUpdate} />}
 
         <section className="entry-container">
           <h2>Tracked Items</h2>
@@ -47,8 +61,26 @@ const Entries = () => {
                 <div className="entry-row2">
                   <p className="entry-dio">{item.description}</p>
                   <div>
-                    <button className="entry-updateBtn">Update</button>
-                    <button className="entry-deleteBtn">Delete</button>
+                    <button
+                      className="entry-updateBtn"
+                      onClick={() => {
+                        setShowUpdate(true);
+                        setShowDelete(false);
+                        setShowEntry(false);
+                      }}
+                    >
+                      Update
+                    </button>
+                    <button
+                      className="entry-deleteBtn"
+                      onClick={() => {
+                        setShowDelete(true);
+                        setShowEntry(false);
+                        setShowUpdate(false);
+                      }}
+                    >
+                      Delete
+                    </button>
                   </div>
                 </div>
               </section>

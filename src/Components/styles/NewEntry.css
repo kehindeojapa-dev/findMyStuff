@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   padding: 1em 1em;
+  border-radius: 5px;
 }
 
 .newentry-closebtn {
